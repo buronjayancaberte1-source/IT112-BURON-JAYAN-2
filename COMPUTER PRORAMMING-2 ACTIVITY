@@ -1,0 +1,14 @@
+# IT112-BURON-JAYAN-2
+ 
+#include <stdio.h>
+int main() {
+    printf(".............................................\n");
+    printf("*                                           *\n");
+    printf("*         WELCOME TO PROGRAMMING            *\n");
+
+    printf("*                                           *\n");
+    printf("*          LEARN - CODE -DEBUG              *\n");
+    printf("*                                           *\n");
+    printf(".............................................\n");
+    return 0;
+}
