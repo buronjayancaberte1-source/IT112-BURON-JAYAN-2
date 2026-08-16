@@ -1,5 +1,4 @@
-# IT112-BURON-JAYAN-2
- 
+
 #include <stdio.h>
 int main() {
     printf(".............................................\n");
