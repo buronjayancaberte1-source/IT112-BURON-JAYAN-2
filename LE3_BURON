@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+
+    char name[100] = "Jayan Caberte Buron";
+    char section[50] = "IT1R14";
+    double num1 = 25;
+    double num2 = 5;
+
+    printf("Enter Complete Name: %s\n", name);
+    printf("Enter Section: %s\n", section);
+
+    printf("\nEnter first number: ");
+    printf("%.0lf\n", num1);
+
+    printf("Enter second number: ");
+    printf("%.0lf\n", num2);
+
+    printf("\nStudent Calculator\n");
+    printf("Student name: %s\n", name);
+    printf("Section: %s\n", section);
+
+    printf("Results:\n");
+    printf("%.0lf + %.0lf = %.0lf\n", num1, num2, num1 + num2);
+    printf("%.0lf - %.0lf = %.0lf\n", num1, num2, num1 - num2);
+    printf("%.0lf * %.0lf = %.0lf\n", num1, num2, num1 * num2);
+    printf("%.0lf / %.0lf = %.2lf\n", num1, num2, num1 / num2);
+
+    return 0;
+}
