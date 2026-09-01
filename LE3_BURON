@@ -2,10 +2,9 @@
 
 int main() {
 
-    char name[100] = "Jayan Caberte Buron";
-    char section[50] = "IT1R14";
-    double num1 = 25;
-    double num2 = 5;
+    char name[100];
+    char section[50];
+    float num1, num2;
 
     printf("Enter Complete Name: %s\n", name);
     printf("Enter Section: %s\n", section);
