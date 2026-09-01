@@ -21,7 +21,7 @@ int main() {
     printf("Student name: %s", name);
     printf("Section: %s", section);
 
-    printf("Results:\n");
+    printf("\nResults:\n");
     printf("%.0f + %.0f = %.0f\n", num1, num2, num1 + num2);
     printf("%.0f - %.0f = %.0f\n", num1, num2, num1 - num2);
     printf("%.0f * %.0f = %.0f\n", num1, num2, num1 * num2);
