@@ -1,0 +1,101 @@
+#include <stdio.h>
+
+// Function prototypes
+double add(double num1, double num2);
+double subtract(double num1, double num2);
+double multiply(double num1, double num2);
+double divide(double num1, double num2);
+
+int main()
+{
+    double num1, num2, result;
+    int choice;
+
+    do
+    {
+        printf("\nMultiple functions to perform Arithmetic Operations\n\n");
+
+        // Ask for the first and second numbers
+        printf("Enter first number: ");
+        scanf("%lf", &num1);
+
+        printf("Enter second number: ");
+        scanf("%lf", &num2);
+
+        // Display operation choices
+        printf("\nChoose Operation:\n");
+        printf("[1] Addition\n");
+        printf("[2] Subtraction\n");
+        printf("[3] Multiplication\n");
+        printf("[4] Division\n");
+        printf("[5] Exit Program\n");
+
+        printf("\nEnter choice [1-5]: ");
+        scanf("%d", &choice);
+
+        // Selection structure
+        switch (choice)
+        {
+            case 1:
+                result = add(num1, num2);
+                printf("\n%.0f + %.0f = %.0f\n", num1, num2, result);
+                break;
+
+            case 2:
+                result = subtract(num1, num2);
+                printf("\n%.0f - %.0f = %.0f\n", num1, num2, result);
+                break;
+
+            case 3:
+                result = multiply(num1, num2);
+                printf("\n%.0f * %.0f = %.0f\n", num1, num2, result);
+                break;
+
+            case 4:
+                if (num2 == 0)
+                {
+                    printf("\nError: Division by zero is not allowed.\n");
+                }
+                else
+                {
+                    result = divide(num1, num2);
+                    printf("\n%.0f / %.0f = %.2f\n", num1, num2, result);
+                }
+                break;
+
+            case 5:
+                printf("\nExiting program...\n");
+                break;
+
+            default:
+                printf("\nInvalid choice! Please choose between 1 and 5.\n");
+        }
+
+    } while (choice != 5);
+
+    return 0;
+}
+
+// Addition function
+double add(double num1, double num2)
+{
+    return num1 + num2;
+}
+
+// Subtraction function
+double subtract(double num1, double num2)
+{
+    return num1 - num2;
+}
+
+// Multiplication function
+double multiply(double num1, double num2)
+{
+    return num1 * num2;
+}
+
+// Division function
+double divide(double num1, double num2)
+{
+    return num1 / num2;
+}
